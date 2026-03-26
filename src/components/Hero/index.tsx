@@ -1,12 +1,13 @@
 import NetworkBackground from "../NetworkBackground";
+import setupFuturista from "../../assets/images/setup-futurista.png";
 
 export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-20 px-6 overflow-hidden bg-black">
-
-        {/* <div className="absolute inset-0 z-0">
-    <NetworkBackground />
-  </div> */}
+      <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 bg-linear-to-br from-green-400/10 to-cyan-400/10 blur-2xl" />
+        <NetworkBackground />
+      </div>
 
       <div className="absolute top-1/4 -left-20 w-96 h-96 bg-primary/5 rounded-full blur-[120px]"></div>
       <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-tertiary/5 rounded-full blur-[120px]"></div>
@@ -56,8 +57,37 @@ export const Hero = () => {
             </a>
           </div>
         </div>
-        <div className="relative w-100 h-100 rounded-2xl overflow-hidden">
-          <NetworkBackground />
+        <div className="z-10 relative w-100 h-100 rounded-2xl overflow-visible">
+
+
+            <div className="
+        relative
+        w-100 h-100
+        rounded-full
+        p-0.75
+        bg-linear-to-br from-cyan-400/30 to-blue-500/30
+        shadow-[0_0_40px_rgba(0,255,200,0.3)]
+        animate-pulse-slow
+      ">
+        
+        {/* Inner circle */}
+        <div className="
+          w-full h-full
+          rounded-full
+          overflow-hidden
+          bg-[#020617]
+          flex items-center justify-center
+        ">
+          
+          {/* Image */}
+          <img
+            src={setupFuturista}
+            alt="Developer"
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+
         </div>
       </div>
     </section>

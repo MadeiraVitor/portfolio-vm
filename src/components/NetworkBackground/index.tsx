@@ -16,10 +16,10 @@ export default function NetworkBackground() {
 
       particles: {
         number: {
-          value: 50,
+          value: 100,
         },
         color: {
-          value: "#2dd4bf", // verde (pode trocar)
+          value: "#2dd4bf",
         },
         links: {
           enable: true,
