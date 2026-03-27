@@ -6,7 +6,6 @@ export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-20 px-6 overflow-hidden bg-black">
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-linear-to-br from-green-400/10 to-cyan-400/10 blur-2xl" />
         <NetworkBackground />
       </div>
 
