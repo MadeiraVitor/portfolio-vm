@@ -1,3 +1,8 @@
+import imageSyntaxwear from '../../assets/images/syntaxwear.png'
+import imageGhibli from '../../assets/images/ghibli.png'
+import imagePokedex from '../../assets/images/pokedex.png'
+import imageTodo from '../../assets/images/todo.png'
+
 export const Projects = () => {
     return (
         <section className="py-32 md:px-6 bg-black relative overflow-hidden" id="projetos">
@@ -15,9 +20,9 @@ export const Projects = () => {
                     <div
                         className="group relative bg-zinc-500/40 rounded-2xl overflow-hidden border border-outline-variant/20 hover:border-primary/40 transition-all duration-500 shadow-xl shrink-0 w-[92%] md:w-full snap-center ml-2.5 md:ml-0">
                         <div className="aspect-video overflow-hidden">
-                            <img alt="Dashboard Project"
+                            <img alt="Syntaxwear Project"
                                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGL3gydvJ3bcY6b2lcgNwNmtv7YLoYAuQF-_p5kCUuBgY6hWQfwgdeUsfnEyAOygXhNKFrgMtVnHAGF0bPITBdjIhObZlgTsyGBAUN-FiZmJIbqImgBGHR-qWlj-VZVhJNiMTddQ8wX_L2-olwA5hSG2Eo_rQ9EPP2c0obEH10wzsb1n15Fc0fgIoPLDzX6vUrvYMlJKrSmI7kDXDlwWVEtb0u2M-8CW_APRDiOe1mdU5CdkpSOxup3qba42_sCdtwP8ru4s8AvFE1" />
+                                src={imageSyntaxwear} />
                         </div>
                         <div className="p-8">
                             <div className="flex flex-wrap gap-2 mb-4">
@@ -28,19 +33,18 @@ export const Projects = () => {
                                 <span
                                     className="px-3 py-1 bg-black/50 text-primary text-xs font-bold rounded-full border border-primary/20">Tailwind</span>
                             </div>
-                            <h4 className="text-2xl font-headline font-bold text-on-surface mb-3">Luminous Finance</h4>
+                            <h4 className="text-2xl font-headline font-bold text-on-surface mb-3">Ecommerce SyntaxWear</h4>
                             <p className="text-on-surface-variant mb-8">
-                                Dashboard financeiro completo com integração de gráficos em tempo real e sistema de
-                                gerenciamento de ativos.
+                                Aplicação de uma loja virtual de calçados desenvolvida com foco em navegação moderna, experiência de compra e organização de componentes reutilizáveis.
                             </p>
                             <div className="flex gap-4">
-                                <a className="flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all"
-                                    href="#">
-                                    Live Demo <span className="material-symbols-outlined text-sm"
+                                <a className="flex items-center gap-1 font-bold hover:text-primary transition-all"
+                                    href="https://syntax-wear-app-sage.vercel.app/" target="_blank">
+                                    Ver Projeto <span className="material-symbols-outlined text-sm"
                                         data-icon="open_in_new">open_in_new</span>
                                 </a>
-                                <a className="flex items-center gap-2 text-on-surface-variant hover:text-on-surface transition-colors"
-                                    href="#">
+                                <a className="flex items-center gap-1  hover:text-primary transition-colors"
+                                    href="https://github.com/MadeiraVitor/syntax-wear-app" target="_blank">
                                     GitHub <span className="material-symbols-outlined text-sm" data-icon="code">code</span>
                                 </a>
                             </div>
@@ -50,33 +54,31 @@ export const Projects = () => {
                     <div
                         className="group relative bg-zinc-500/40 rounded-2xl overflow-hidden border border-outline-variant/20 hover:border-primary/40 transition-all duration-500 shadow-xl shrink-0 w-[90%] md:w-full snap-center">
                         <div className="aspect-video overflow-hidden">
-                            <img alt="E-commerce Project"
+                            <img alt="Ghibli Films Project"
                                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-fB3RhZi-WGoFqDKGgsRK5_vOqOCnubyKq49VD3FAG9BMBWYOmUnPmVt8ODoh1ymwNTMOSRrm3Mapkjh4ucvld39kukjWBHu9HCt4blwm80ViOn630bcC9f2FVc9VWSNIa41Zd9pgvOZ1AgI2eEvc3Fd5OR07Y0QPk7FXF_KyGiyB_B7TLZd5NpgHTJjIZmtPQEb_5LTB41U-ga35j4IliQp10tsbHyqNDELryiOLpISjH4t75M6J5EUf9_OK-HHho1dnYG2SiAep" />
+                                src={imageGhibli} />
                         </div>
                         <div className="p-8">
                             <div className="flex flex-wrap gap-2 mb-4">
                                 <span
-                                    className="px-3 py-1 bg-black/50 text-primary text-xs font-bold rounded-full border border-primary/20">Vite</span>
+                                    className="px-3 py-1 bg-black/50 text-primary text-xs font-bold rounded-full border border-primary/20">React</span>
                                 <span
-                                    className="px-3 py-1 bg-black/50 text-primary text-xs font-bold rounded-full border border-primary/20">Framer
-                                    Motion</span>
+                                    className="px-3 py-1 bg-black/50 text-primary text-xs font-bold rounded-full border border-primary/20">TypeScript</span>
                                 <span
-                                    className="px-3 py-1 bg-black/50 text-primary text-xs font-bold rounded-full border border-primary/20">Redux</span>
+                                    className="px-3 py-1 bg-black/50 text-primary text-xs font-bold rounded-full border border-primary/20">Fetch API</span>
                             </div>
-                            <h4 className="text-2xl font-headline font-bold text-on-surface mb-3">Nexus Store</h4>
+                            <h4 className="text-2xl font-headline font-bold text-on-surface mb-3">Studio Ghibli Films</h4>
                             <p className="text-on-surface-variant mb-8">
-                                E-commerce de moda tecnológica com transições fluidas, carrinho persistente e sistema de
-                                filtros avançado.
+                                Aplicação desenvolvida para consumir a API pública do Studio Ghibli, listando os 10 primeiros filmes em ordem alfabética e exibindo seus detalhes em uma página interna.
                             </p>
                             <div className="flex gap-4">
-                                <a className="flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all"
-                                    href="#">
-                                    Live Demo <span className="material-symbols-outlined text-sm"
+                                <a className="flex items-center gap-1 font-bold hover:text-primary transition-all"
+                                    href="https://ghibli-films-gold.vercel.app/" target="_blank">
+                                    Ver Projeto <span className="material-symbols-outlined text-sm"
                                         data-icon="open_in_new">open_in_new</span>
                                 </a>
-                                <a className="flex items-center gap-2 text-on-surface-variant hover:text-on-surface transition-colors"
-                                    href="#">
+                                <a className="flex items-center gap-1  hover:text-primary transition-colors"
+                                    href="https://github.com/MadeiraVitor/ghibli-films" target="_blank">
                                     GitHub <span className="material-symbols-outlined text-sm" data-icon="code">code</span>
                                 </a>
                             </div>
@@ -86,32 +88,31 @@ export const Projects = () => {
                     <div
                         className="group relative bg-zinc-500/40 rounded-2xl overflow-hidden border border-outline-variant/20 hover:border-primary/40 transition-all duration-500 shadow-xl shrink-0 w-[90%] md:w-full snap-center">
                         <div className="aspect-video overflow-hidden">
-                            <img alt="EcoTrack Project"
+                            <img alt="Pokedex Project"
                                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmcgt1drVZPIkyrpwAXFkYy3aUOf9wdm7xMX7s-8s2ZJSonxi0oaW6LPCiMBTASiLV3QzG3_W-n2o_r_vPTYA49Y3ZKKRMM89UITJHv19TfmSBBbSn8F3zdyPZz2pzIx6f3eZROcW49ArSWccf6_F5lnjA57Io3-euluFVg1vxvPJy-z0dyc7lKaOoY5m_0l-cLmLR2zM_udyWUw_XDNDlZuHe3K2CWhnxYZ9_A6A0LUqYHboQx3S5U9lzVjuk-al9jeNZMyktjiKw" />
+                                src={imagePokedex} />
                         </div>
                         <div className="p-8">
                             <div className="flex flex-wrap gap-2 mb-4">
                                 <span
                                     className="px-3 py-1 bg-black/50 text-primary text-xs font-bold rounded-full border border-primary/20">React</span>
                                 <span
-                                    className="px-3 py-1 bg-black/50 text-primary text-xs font-bold rounded-full border border-primary/20">Node.js</span>
+                                    className="px-3 py-1 bg-black/50 text-primary text-xs font-bold rounded-full border border-primary/20">TypeScript</span>
                                 <span
-                                    className="px-3 py-1 bg-black/50 text-primary text-xs font-bold rounded-full border border-primary/20">PostgreSQL</span>
+                                    className="px-3 py-1 bg-black/50 text-primary text-xs font-bold rounded-full border border-primary/20">Fetch API</span>
                             </div>
-                            <h4 className="text-2xl font-headline font-bold text-on-surface mb-3">EcoTrack</h4>
+                            <h4 className="text-2xl font-headline font-bold text-on-surface mb-3">Pokédex</h4>
                             <p className="text-on-surface-variant mb-8">
-                                Plataforma de monitoramento de sustentabilidade para empresas com análise de pegada de
-                                carbono e relatórios automatizados.
+                                Aplicação desenvolvida como Single Page Application (SPA) para listar Pokémons utilizando a PokeAPI, com sistema de tema claro/escuro e página de detalhes dinâmica.
                             </p>
                             <div className="flex gap-4">
-                                <a className="flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all"
-                                    href="#">
-                                    Live Demo <span className="material-symbols-outlined text-sm"
+                                <a className="flex items-center gap-1 font-bold hover:text-primary transition-all"
+                                    href="https://pokedex-project-hazel.vercel.app/" target="_blank">
+                                    Ver Projeto <span className="material-symbols-outlined text-sm"
                                         data-icon="open_in_new">open_in_new</span>
                                 </a>
-                                <a className="flex items-center gap-2 text-on-surface-variant hover:text-on-surface transition-colors"
-                                    href="#">
+                                <a className="flex items-center gap-1  hover:text-primary transition-colors"
+                                    href="https://github.com/MadeiraVitor/pokedex-project" target="_blank">
                                     GitHub <span className="material-symbols-outlined text-sm" data-icon="code">code</span>
                                 </a>
                             </div>
@@ -121,33 +122,31 @@ export const Projects = () => {
                     <div
                         className="group relative bg-zinc-500/40 rounded-2xl overflow-hidden border border-outline-variant/20 hover:border-primary/40 transition-all duration-500 shadow-xl shrink-0 w-[92%] md:w-full snap-center mr-2.5 md:mr-0">
                         <div className="aspect-video overflow-hidden">
-                            <img alt="CloudVibe Project"
+                            <img alt="To-Do App Project"
                                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAd9i4tbe-l2t9XiGwDwAGzrK9PSrOjSn7bv2l9QnwcZCxy5ZIlaQ12mtTe65cXy3dKZhQB-uiFFkzofmGZRxzXb0ylP4eeGJimIjjG1IfXMuzG_OaBxe6XIh74T8WMfdfZ_72LL2yTivpGsjaGFaf2Vu5rmAythP1N6hvx0FSnOxBifTxbK2CdDjXoXNkyEJcxvAc6R3i-RK_oMqmhqLyV8YVFIa7OGZuFlz4VIv279z6eMb53pv-vqbO0CPbg7ZnnMavGxm_nvNWk" />
+                                src={imageTodo} />
                         </div>
                         <div className="p-8">
                             <div className="flex flex-wrap gap-2 mb-4">
                                 <span
-                                    className="px-3 py-1 bg-black/50 text-primary text-xs font-bold rounded-full border border-primary/20">Next.js</span>
+                                    className="px-3 py-1 bg-black/50 text-primary text-xs font-bold rounded-full border border-primary/20">React</span>
                                 <span
-                                    className="px-3 py-1 bg-black/50 text-primary text-xs font-bold rounded-full border border-primary/20">Tailwind
-                                    CSS</span>
+                                    className="px-3 py-1 bg-black/50 text-primary text-xs font-bold rounded-full border border-primary/20">TypeScript</span>
                                 <span
-                                    className="px-3 py-1 bg-black/50 text-primary text-xs font-bold rounded-full border border-primary/20">Supabase</span>
+                                    className="px-3 py-1 bg-black/50 text-primary text-xs font-bold rounded-full border border-primary/20">Context API</span>
                             </div>
-                            <h4 className="text-2xl font-headline font-bold text-on-surface mb-3">CloudVibe</h4>
+                            <h4 className="text-2xl font-headline font-bold text-on-surface mb-3">To-Do App</h4>
                             <p className="text-on-surface-variant mb-8">
-                                Serviço de streaming de música moderno com foco em artistas independentes, áudio de alta
-                                fidelidade e playlists dinâmicas.
+                                Aplicação de gerenciamento de tarefas desenvolvida com foco em interatividade, manipulação de estado e experiência do usuário, incluindo sistema de filtros e alternância entre tema claro e escuro.
                             </p>
                             <div className="flex gap-4">
-                                <a className="flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all"
-                                    href="#">
-                                    Live Demo <span className="material-symbols-outlined text-sm"
+                                <a className="flex items-center gap-1 font-bold hover:text-primary transition-all"
+                                    href="https://todolist-three-dusky.vercel.app/" target="_blank">
+                                    Ver Projeto <span className="material-symbols-outlined text-sm"
                                         data-icon="open_in_new">open_in_new</span>
                                 </a>
-                                <a className="flex items-center gap-2 text-on-surface-variant hover:text-on-surface transition-colors"
-                                    href="#">
+                                <a className="flex items-center gap-1  hover:text-primary transition-colors"
+                                    href="https://github.com/MadeiraVitor/todolist" target="_blank">
                                     GitHub <span className="material-symbols-outlined text-sm" data-icon="code">code</span>
                                 </a>
                             </div>
