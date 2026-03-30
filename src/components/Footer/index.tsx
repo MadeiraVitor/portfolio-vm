@@ -3,7 +3,7 @@ import { FaCode, FaEnvelope, FaFolderOpen, FaHome, FaUser } from "react-icons/fa
 export const Footer = () => {
   return (
     <footer className="w-full py-12 border-t border-outline-variant/30 bg-black">
-      <div className="max-w-7xl mx-auto px-8 flex flex-col md:grid md:grid-cols-3 items-center gap-8">
+      <div className="max-w-7xl mx-auto px-8 flex flex-col lg:grid lg:grid-cols-3 items-center gap-8">
         {/* <!-- VM Logo --> */}
         <div className="flex justify-center md:justify-start">
           <a
@@ -30,33 +30,33 @@ export const Footer = () => {
         </div>
         {/* <!-- Navigation Icons --> */}
         <div className="flex justify-center md:justify-end">
-          <div className="flex items-center gap-1 py-1 px-4 border-3 border-outline-variant/30 rounded-full bg-transparent">
+          <div className="flex items-center gap-1 py-1 px-3 border-3 border-outline-variant/30 rounded-full bg-transparent">
             <a
-              className="p-2 hover:text-primary text-outline transition-all duration-300 group"
+              className="p-3 hover:text-primary hover:bg-primary/10 rounded-full text-outline transition-all duration-300 group"
               href="#hero"
             >
               <FaHome className="block text-lg group-hover:scale-110 transition-transform duration-300" />
             </a>
             <a
-              className="p-2 hover:text-primary text-outline transition-all duration-300 group"
+              className="p-3 hover:text-primary hover:bg-primary/10 rounded-full text-outline transition-all duration-300 group"
               href="#sobre"
             >
               <FaUser className="block text-md group-hover:scale-110 transition-transform duration-300" />
             </a>
             <a
-              className="p-2 hover:text-primary text-outline transition-all duration-300 group"
+              className="p-3 hover:text-primary hover:bg-primary/10 rounded-full text-outline transition-all duration-300 group"
               href="#habilidades"
             >
               <FaCode className="block text-lg group-hover:scale-110 transition-transform duration-300" />
             </a>
             <a
-              className="p-2 hover:text-primary text-outline transition-all duration-300 group"
+              className="p-3 hover:text-primary hover:bg-primary/10 rounded-full text-outline transition-all duration-300 group"
               href="#projetos"
             >
               <FaFolderOpen className="block text-lg group-hover:scale-110 transition-transform duration-300" />
             </a>
             <a
-              className="p-2 hover:text-primary text-outline transition-all duration-300 group"
+              className="p-3 hover:text-primary hover:bg-primary/10 rounded-full text-outline transition-all duration-300 group"
               href="#contato"
             >
               <FaEnvelope className="block text-lg group-hover:scale-110 transition-transform duration-300" />
