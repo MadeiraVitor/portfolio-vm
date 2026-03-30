@@ -2,9 +2,9 @@ import fotoPerfil from "../../assets/images/foto-perfil.png";
 
 export const About = () => {
   return (
-    <section className="py-32 px-6 bg-black" id="sobre">
+    <section className="py-16 md:py-32 px-3 md:px-6 bg-black" id="sobre">
       <div className="max-w-4xl mx-auto">
-        <div className="bg-zinc-900/30 rounded-3xl p-8 md:p-16 border border-outline-variant/20 relative overflow-hidden flex flex-col items-center text-center">
+        <div className="bg-zinc-900/30 rounded-3xl p-4 md:p-16 border border-outline-variant/20 relative overflow-hidden flex flex-col items-center text-center">
           <h2 className="text-4xl md:text-5xl font-headline font-black text-on-surface mb-12">
             <span className="text-on-surface">Sobre</span>{" "}
             <span className="text-primary">Mim</span>

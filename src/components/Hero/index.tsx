@@ -16,8 +16,8 @@ export const Hero = () => {
       <div className="absolute top-1/4 -left-20 w-96 h-96 bg-primary/5 rounded-full blur-[120px]"></div>
       <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-tertiary/5 rounded-full blur-[120px]"></div>
 
-      <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 lg:gap-24 items-center">
-        <div className="z-10 lg:pl-12 flex flex-col items-center text-center lg:items-start lg:text-left">
+      <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-[max-content_max-content] lg:gap-24 items-center lg:justify-center">
+        <div className="z-10 flex flex-col items-center text-center lg:items-start lg:text-left">
           <div className="relative mb-6 lg:hidden">
             <div className="w-28 h-28 rounded-full p-0.5 bg-linear-to-br from-primary to-secondary shadow-[0_0_20px_rgba(106,242,222,0.35)]">
               <img
@@ -103,7 +103,7 @@ export const Hero = () => {
               <img
                 src={setupFuturista}
                 alt="Developer"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-[65%_50%]"
               />
             </div>
           </div>

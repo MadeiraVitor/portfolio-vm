@@ -2,9 +2,9 @@ import { FaEnvelope, FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 
 export const Contact = () => {
   return (
-    <section className="py-32 px-6 bg-black" id="contato">
+    <section className="py-16 md:py-32 px-3 md:px-6 bg-black" id="contato">
       <div className="max-w-7xl mx-auto">
-        <div className="bg-zinc-900/30 rounded-3xl p-8 md:p-16 border border-outline-variant/20 relative overflow-hidden">
+        <div className="bg-zinc-900/30 rounded-3xl p-4 md:p-16 border border-outline-variant/20 relative overflow-hidden">
           <div className="absolute -bottom-20 -right-20 w-80 h-80 bg-primary/10 rounded-full blur-[100px]"></div>
           <div className="relative z-10 text-center flex flex-col items-center">
             <h3 className="text-4xl md:text-5xl font-headline font-black text-on-surface mb-6">

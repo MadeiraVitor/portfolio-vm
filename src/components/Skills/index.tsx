@@ -14,7 +14,7 @@ import {
 export const Skills = () => {
   return (
     <section
-      className="py-32 px-6 bg-black relative overflow-hidden"
+      className="py-16 md:py-32 px-3 md:px-6 bg-black relative overflow-hidden"
       id="habilidades"
     >
       <div className="absolute top-0 left-0 w-full h-px bg-linear-to-r from-transparent via-primary/30 to-transparent"></div>
@@ -26,7 +26,6 @@ export const Skills = () => {
           <div className="h-1.5 w-24 bg-primary mx-auto rounded-full"></div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
           <div className="bg-zinc-900/40 rounded-3xl p-8 border border-outline-variant/20 hover:border-primary/30 transition-all duration-300">
             <h4 className="text-on-surface font-headline font-bold text-lg mb-8 pb-4 border-b border-outline-variant/20">
               Front-end
@@ -59,7 +58,7 @@ export const Skills = () => {
               </div>
             </div>
           </div>
-         
+
           <div className="bg-zinc-900/40 rounded-3xl p-8 border border-outline-variant/20 hover:border-primary/30 transition-all duration-300">
             <h4 className="text-on-surface font-headline font-bold text-lg mb-8 pb-4 border-b border-outline-variant/20">
               Back-end
@@ -92,8 +91,8 @@ export const Skills = () => {
               </div>
             </div>
           </div>
-          {/* <!-- Ferramentas & Fluxo Category --> */}
-          <div className="bg-zinc-900/40 rounded-3xl p-8 border border-outline-variant/20 hover:border-primary/30 transition-all duration-300 md:col-span-2 lg:col-span-1">
+          {/* <!-- Ferramentas --> */}
+          <div className="bg-zinc-900/40 rounded-3xl p-8 border border-outline-variant/20 hover:border-primary/30 transition-all duration-300">
             <h4 className="text-on-surface font-headline font-bold text-lg mb-8 pb-4 border-b border-outline-variant/20">
               Ferramentas
             </h4>
