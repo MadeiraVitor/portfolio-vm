@@ -52,8 +52,9 @@ export const Projects = () => {
                   className="flex items-center gap-1 font-bold hover:text-primary transition-all"
                   href="https://syntax-wear-app-sage.vercel.app/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  Ver Projeto{" "}
+                  Ver Projeto
                   <span
                     className="material-symbols-outlined text-sm"
                     data-icon="open_in_new"
@@ -65,8 +66,9 @@ export const Projects = () => {
                   className="flex items-center gap-1  hover:text-primary transition-colors"
                   href="https://github.com/MadeiraVitor/syntax-wear-app"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  GitHub{" "}
+                  GitHub
                   <span
                     className="material-symbols-outlined text-sm"
                     data-icon="code"
@@ -111,8 +113,9 @@ export const Projects = () => {
                   className="flex items-center gap-1 font-bold hover:text-primary transition-all"
                   href="https://ghibli-films-gold.vercel.app/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  Ver Projeto{" "}
+                  Ver Projeto
                   <span
                     className="material-symbols-outlined text-sm"
                     data-icon="open_in_new"
@@ -124,8 +127,9 @@ export const Projects = () => {
                   className="flex items-center gap-1  hover:text-primary transition-colors"
                   href="https://github.com/MadeiraVitor/ghibli-films"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  GitHub{" "}
+                  GitHub
                   <span
                     className="material-symbols-outlined text-sm"
                     data-icon="code"
@@ -170,8 +174,9 @@ export const Projects = () => {
                   className="flex items-center gap-1 font-bold hover:text-primary transition-all"
                   href="https://pokedex-project-hazel.vercel.app/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  Ver Projeto{" "}
+                  Ver Projeto
                   <span
                     className="material-symbols-outlined text-sm"
                     data-icon="open_in_new"
@@ -183,8 +188,9 @@ export const Projects = () => {
                   className="flex items-center gap-1  hover:text-primary transition-colors"
                   href="https://github.com/MadeiraVitor/pokedex-project"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  GitHub{" "}
+                  GitHub
                   <span
                     className="material-symbols-outlined text-sm"
                     data-icon="code"
@@ -230,8 +236,9 @@ export const Projects = () => {
                   className="flex items-center gap-1 font-bold hover:text-primary transition-all"
                   href="https://todolist-three-dusky.vercel.app/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  Ver Projeto{" "}
+                  Ver Projeto
                   <span
                     className="material-symbols-outlined text-sm"
                     data-icon="open_in_new"
@@ -243,8 +250,9 @@ export const Projects = () => {
                   className="flex items-center gap-1  hover:text-primary transition-colors"
                   href="https://github.com/MadeiraVitor/todolist"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  GitHub{" "}
+                  GitHub
                   <span
                     className="material-symbols-outlined text-sm"
                     data-icon="code"

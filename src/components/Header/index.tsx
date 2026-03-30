@@ -2,7 +2,7 @@ export const Header = () => {
   return (
     <header className="fixed top-0 w-full z-50 bg-black/60 backdrop-blur-xl border-b border-outline-variant/30 transition-colors duration-300">
       <div className="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
-        <a className="flex items-center gap-2 group cursor-pointer" href="#inicio" aria-label="Ir para o topo">
+        <a className="flex items-center gap-2 group cursor-pointer">
           <span className="w-10 h-10 bg-primary/10 border-2 border-primary rounded-lg flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary-container transition-all duration-300">
             <span className="font-headline font-black text-xl tracking-tighter text-primary group-hover:text-on-primary-container">
               VM

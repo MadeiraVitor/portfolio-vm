@@ -4,7 +4,7 @@ import { TypewriterRole } from "../TypewriterRole";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-20 px-6 overflow-hidden bg-black">
+    <section className="relative min-h-screen flex items-center justify-center pt-20 px-6 overflow-hidden bg-black" id="hero">
       <div className="absolute inset-0 z-0">
         <NetworkBackground />
       </div>
@@ -37,6 +37,7 @@ export const Hero = () => {
               className="px-8 py-4 bg-linear-to-br from-primary to-primary-container text-on-primary-container font-headline font-bold rounded-full hover:shadow-[0_0_30px_rgba(106,242,222,0.5)] transition-all duration-300 hover:scale-105 active:scale-95 flex items-center gap-2"
               href="https://github.com/MadeiraVitor"
               target="_blank"
+              rel="noopener noreferrer"
             >
               GitHub
               <span
@@ -50,6 +51,7 @@ export const Hero = () => {
               className="px-8 py-4 border-3 border-outline-variant/50 text-primary font-headline font-bold rounded-full hover:bg-primary/5 transition-all duration-300 hover:scale-105 active:scale-95 flex items-center gap-2"
               href="https://www.linkedin.com/in/vitor-madeira/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               LinkedIn
               <span
