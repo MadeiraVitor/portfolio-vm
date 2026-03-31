@@ -1,9 +1,16 @@
 import fotoPerfil from "../../assets/images/foto-perfil.png";
+import { motion } from "motion/react";
 
 export const About = () => {
   return (
     <section className="py-20 md:py-32 px-3 md:px-6 bg-black" id="sobre">
-      <div className="max-w-4xl mx-auto">
+      <motion.div
+        className="max-w-4xl mx-auto"
+        initial={{ opacity: 0, y: 76 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.4 }}
+        transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+      >
         <div className="bg-zinc-900/30 rounded-3xl p-4 md:p-16 border border-outline-variant/20 relative overflow-hidden flex flex-col items-center text-center">
           <h2 className="text-4xl md:text-5xl font-headline font-black text-on-surface mb-12">
             <span className="text-on-surface">Sobre</span>{" "}
@@ -23,12 +30,12 @@ export const About = () => {
             <p className="text-on-surface-variant text-lg leading-relaxed mb-6">
               Desenvolvedor Front-End com foco em React e TypeScript, atuando na
               construção de interfaces modernas, performáticas e bem
-              estruturadas. Utilizo TypeScript para
-              aumentar a previsibilidade do código e reduzir erros em tempo de
-              desenvolvimento. Tenho como prioridade escrever código limpo,
-              organizado e escalável, seguindo boas práticas e versionamento com
-              Git. Busco evoluir constantemente em arquitetura de projetos,
-              performance e experiência do usuário.
+              estruturadas. Utilizo TypeScript para aumentar a previsibilidade
+              do código e reduzir erros em tempo de desenvolvimento. Tenho como
+              prioridade escrever código limpo, organizado e escalável, seguindo
+              boas práticas e versionamento com Git. Busco evoluir
+              constantemente em arquitetura de projetos, performance e
+              experiência do usuário.
             </p>
           </div>
           <a
@@ -42,7 +49,7 @@ export const About = () => {
             Baixar CV
           </a>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

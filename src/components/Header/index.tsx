@@ -1,9 +1,15 @@
+import { motion } from "motion/react";
 import { MenuMobile } from "../MenuMobile";
 import { IoSunnyOutline } from "react-icons/io5";
 
 export const Header = () => {
   return (
-    <header className="fixed top-0 w-full z-50 bg-black/60 backdrop-blur-xl border-b border-outline-variant/30 transition-colors duration-300">
+    <motion.header
+      initial={{ opacity: 0, y: -30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      className="fixed top-0 w-full z-50 bg-black/60 backdrop-blur-xl border-b border-outline-variant/30 transition-colors duration-300"
+    >
       <div className="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
         <a className="flex items-center gap-2 group cursor-pointer">
           <span className="w-10 h-10 bg-primary/10 border-2 border-primary rounded-lg flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary-container transition-all duration-300">
@@ -61,6 +67,6 @@ export const Header = () => {
           <MenuMobile />
         </div>
       </div>
-    </header>
+    </motion.header>
   );
 };

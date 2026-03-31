@@ -1,9 +1,16 @@
+import { motion } from "motion/react";
 import { FaEnvelope, FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 
 export const Contact = () => {
   return (
     <section className="py-16 md:py-32 px-3 md:px-6 bg-black" id="contato">
-      <div className="max-w-7xl mx-auto">
+      <motion.div
+        initial={{ opacity: 0, y: 76 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.4 }}
+        transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+        className="max-w-7xl mx-auto"
+      >
         <div className="bg-zinc-900/30 rounded-3xl p-4 md:p-16 border border-outline-variant/20 relative overflow-hidden">
           <div className="absolute -bottom-20 -right-20 w-80 h-80 bg-primary/10 rounded-full blur-[100px]"></div>
           <div className="relative z-10 text-center flex flex-col items-center">
@@ -75,7 +82,7 @@ export const Contact = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

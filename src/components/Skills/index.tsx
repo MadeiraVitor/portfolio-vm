@@ -1,4 +1,5 @@
 import { FaFigma, FaGitAlt, FaNodeJs, FaReact } from "react-icons/fa";
+import { motion } from "motion/react";
 import {
   SiDbeaver,
   SiDocker,
@@ -11,6 +12,24 @@ import {
   SiVite,
 } from "react-icons/si";
 
+const cardsContainerVariants = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 40 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.55 },
+  },
+};
+
 export const Skills = () => {
   return (
     <section
@@ -18,15 +37,30 @@ export const Skills = () => {
       id="habilidades"
     >
       <div className="absolute top-0 left-0 w-full h-px bg-linear-to-r from-transparent via-primary/30 to-transparent"></div>
-      <div className="max-w-7xl mx-auto">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.4 }}
+        transition={{ duration: 0.5 }}
+        className="max-w-7xl mx-auto"
+      >
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-headline font-black text-on-surface mb-6">
             Minhas <span className="text-primary">Stacks</span>
           </h2>
           <div className="h-1.5 w-24 bg-primary mx-auto rounded-full"></div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="bg-zinc-900/40 rounded-3xl p-8 border border-outline-variant/20 hover:border-primary/30 transition-all duration-300">
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          variants={cardsContainerVariants}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.4 }}
+        >
+          <motion.div
+            className="bg-zinc-900/40 rounded-3xl p-8 border border-outline-variant/20 hover:border-primary/30 transition-all duration-300"
+            variants={cardVariants}
+          >
             <h4 className="text-on-surface font-headline font-bold text-lg mb-8 pb-4 border-b border-outline-variant/20">
               Front-end
             </h4>
@@ -57,9 +91,12 @@ export const Skills = () => {
                 </span>
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="bg-zinc-900/40 rounded-3xl p-8 border border-outline-variant/20 hover:border-primary/30 transition-all duration-300">
+          <motion.div
+            className="bg-zinc-900/40 rounded-3xl p-8 border border-outline-variant/20 hover:border-primary/30 transition-all duration-300"
+            variants={cardVariants}
+          >
             <h4 className="text-on-surface font-headline font-bold text-lg mb-8 pb-4 border-b border-outline-variant/20">
               Back-end
             </h4>
@@ -90,9 +127,12 @@ export const Skills = () => {
                 </span>
               </div>
             </div>
-          </div>
+          </motion.div>
           {/* <!-- Ferramentas --> */}
-          <div className="bg-zinc-900/40 rounded-3xl p-8 border border-outline-variant/20 hover:border-primary/30 transition-all duration-300">
+          <motion.div
+            className="bg-zinc-900/40 rounded-3xl p-8 border border-outline-variant/20 hover:border-primary/30 transition-all duration-300"
+            variants={cardVariants}
+          >
             <h4 className="text-on-surface font-headline font-bold text-lg mb-8 pb-4 border-b border-outline-variant/20">
               Ferramentas
             </h4>
@@ -128,9 +168,9 @@ export const Skills = () => {
                 </span>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
+          </motion.div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 };

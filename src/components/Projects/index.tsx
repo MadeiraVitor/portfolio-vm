@@ -2,6 +2,25 @@ import imageSyntaxwear from "../../assets/images/syntaxwear.png";
 import imageGhibli from "../../assets/images/ghibli.png";
 import imagePokedex from "../../assets/images/pokedex.png";
 import imageTodo from "../../assets/images/todo.png";
+import { motion } from "motion/react";
+
+const projectCardsContainerVariants = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const projectCardVariants = {
+  hidden: { opacity: 0, y: 24 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.55 },
+  },
+};
 
 export const Projects = () => {
   return (
@@ -10,16 +29,32 @@ export const Projects = () => {
       id="projetos"
     >
       <div className="absolute top-0 left-0 w-full h-px bg-linear-to-r from-transparent via-primary/30 to-transparent"></div>
-      <div className="max-w-7xl mx-auto">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.4 }}
+        transition={{ duration: 0.5 }}
+        className="max-w-7xl mx-auto"
+      >
         <div className="text-center mb-20">
           <h3 className="text-4xl md:text-5xl font-headline font-black text-on-surface mb-6">
             Meus <span className="text-primary">Projetos</span>
           </h3>
           <div className="h-1.5 w-24 bg-primary mx-auto rounded-full"></div>
         </div>
-        <div className="flex gap-2.5 md:grid grid-cols-1 md:grid-cols-2 md:gap-5 overflow-x-auto scrollbar-hide snap-x snap-mandatory">
+        <motion.div
+          className="flex gap-2.5 md:grid grid-cols-1 md:grid-cols-2 md:gap-5 overflow-x-auto scrollbar-hide snap-x snap-mandatory"
+          variants={projectCardsContainerVariants}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.2 }}
+        >
           {/* <!-- Project Card 1 --> */}
-          <div className="group relative bg-zinc-500/40 rounded-2xl overflow-hidden border border-outline-variant/20 hover:border-primary/40 transition-all duration-500 shadow-xl shrink-0 w-[92%] md:w-full snap-center ml-2.5 md:ml-0">
+          <motion.div
+            className="group relative bg-zinc-500/40 rounded-2xl overflow-hidden border border-outline-variant/20 hover:border-primary/40 transition-all duration-500 shadow-xl shrink-0 w-[92%] md:w-full snap-center ml-2.5 md:ml-0"
+            variants={projectCardVariants}
+            transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
+          >
             <div className="aspect-video overflow-hidden">
               <img
                 alt="Syntaxwear Project"
@@ -78,9 +113,13 @@ export const Projects = () => {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
           {/* <!-- Project Card 2 --> */}
-          <div className="group relative bg-zinc-500/40 rounded-2xl overflow-hidden border border-outline-variant/20 hover:border-primary/40 transition-all duration-500 shadow-xl shrink-0 w-[90%] md:w-full snap-center">
+          <motion.div
+            className="group relative bg-zinc-500/40 rounded-2xl overflow-hidden border border-outline-variant/20 hover:border-primary/40 transition-all duration-500 shadow-xl shrink-0 w-[90%] md:w-full snap-center"
+            variants={projectCardVariants}
+            transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+          >
             <div className="aspect-video overflow-hidden">
               <img
                 alt="Ghibli Films Project"
@@ -139,9 +178,13 @@ export const Projects = () => {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
           {/* <!-- Project Card 3 --> */}
-          <div className="group relative bg-zinc-500/40 rounded-2xl overflow-hidden border border-outline-variant/20 hover:border-primary/40 transition-all duration-500 shadow-xl shrink-0 w-[90%] md:w-full snap-center">
+          <motion.div
+            className="group relative bg-zinc-500/40 rounded-2xl overflow-hidden border border-outline-variant/20 hover:border-primary/40 transition-all duration-500 shadow-xl shrink-0 w-[90%] md:w-full snap-center"
+            variants={projectCardVariants}
+            transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
+          >
             <div className="aspect-video overflow-hidden">
               <img
                 alt="Pokedex Project"
@@ -200,9 +243,13 @@ export const Projects = () => {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
           {/* <!-- Project Card 4 --> */}
-          <div className="group relative bg-zinc-500/40 rounded-2xl overflow-hidden border border-outline-variant/20 hover:border-primary/40 transition-all duration-500 shadow-xl shrink-0 w-[92%] md:w-full snap-center mr-2.5 md:mr-0">
+          <motion.div
+            className="group relative bg-zinc-500/40 rounded-2xl overflow-hidden border border-outline-variant/20 hover:border-primary/40 transition-all duration-500 shadow-xl shrink-0 w-[92%] md:w-full snap-center mr-2.5 md:mr-0"
+            variants={projectCardVariants}
+            transition={{ duration: 0.8, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
+          >
             <div className="aspect-video overflow-hidden">
               <img
                 alt="To-Do App Project"
@@ -262,9 +309,9 @@ export const Projects = () => {
                 </a>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
+          </motion.div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 };
