@@ -1,3 +1,6 @@
+import { MenuMobile } from "../MenuMobile";
+import { IoSunnyOutline } from "react-icons/io5";
+
 export const Header = () => {
   return (
     <header className="fixed top-0 w-full z-50 bg-black/60 backdrop-blur-xl border-b border-outline-variant/30 transition-colors duration-300">
@@ -11,7 +14,7 @@ export const Header = () => {
         </a>
 
         <nav aria-label="Navegacao principal">
-          <ul className="hidden md:flex items-center space-gap-8 gap-8">
+          <ul className="hidden md:flex items-center gap-8">
             <li>
               <a
                 className="text-slate-400 hover:text-[#6af2de] transition-colors font-['Manrope'] font-bold tracking-tight text-sm hover:scale-105 duration-200"
@@ -47,11 +50,16 @@ export const Header = () => {
           </ul>
         </nav>
 
-        <button className="text-[#6af2de] hover:scale-105 transition-transform duration-200 cursor-pointer" aria-label="Alternar tema">
-          <span className="material-symbols-outlined" data-icon="light_mode">
-            light_mode
-          </span>
-        </button>
+        <div className="flex items-center gap-4 md:gap-0">
+          <button
+            className="text-[#6af2de] hover:scale-105 transition-transform duration-200 cursor-pointer"
+            aria-label="Alternar tema"
+          >
+            <IoSunnyOutline className="text-2xl" />
+          </button>
+
+          <MenuMobile />
+        </div>
       </div>
     </header>
   );

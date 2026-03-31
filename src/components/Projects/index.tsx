@@ -6,7 +6,7 @@ import imageTodo from "../../assets/images/todo.png";
 export const Projects = () => {
   return (
     <section
-      className="py-16 md:py-32 md:px-6 bg-black relative overflow-hidden"
+      className="py-20 md:py-32 md:px-6 bg-black relative overflow-hidden"
       id="projetos"
     >
       <div className="absolute top-0 left-0 w-full h-px bg-linear-to-r from-transparent via-primary/30 to-transparent"></div>
