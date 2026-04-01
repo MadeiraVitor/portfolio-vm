@@ -1,8 +1,20 @@
-import { FaCode, FaEnvelope, FaFolderOpen, FaHome, FaUser } from "react-icons/fa";
+import { motion } from "motion/react";
+import {
+  FaCode,
+  FaEnvelope,
+  FaFolderOpen,
+  FaHome,
+  FaUser,
+} from "react-icons/fa";
 
 export const Footer = () => {
   return (
-    <footer className="w-full py-12 border-t border-outline-variant/30 bg-black">
+    <motion.footer
+      initial={{ opacity: 0, y: 0 }}
+      animate={{ opacity: 1, y: -50 }}
+      transition={{ duration: 0.8 }}
+      className="w-full pt-12 pb-6 border-t border-outline-variant/30 bg-black"
+    >
       <div className="max-w-7xl mx-auto px-8 flex flex-col lg:grid lg:grid-cols-3 items-center gap-8">
         {/* <!-- VM Logo --> */}
         <div className="flex justify-center md:justify-start">
@@ -21,7 +33,7 @@ export const Footer = () => {
         {/* <!-- Credits --> */}
         <div className="text-center">
           <p className="font-body text-sm text-on-surface-variant leading-relaxed">
-            Portfólio Profissional desenvolvido por <br/>
+            Portfólio Profissional desenvolvido por <br />
             <span className="text-primary font-bold"> Vitor Madeira</span>
           </p>
           <p className="font-body text-[10px] tracking-[0.2em] uppercase text-outline mt-2">
@@ -64,6 +76,6 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
+    </motion.footer>
   );
 };
