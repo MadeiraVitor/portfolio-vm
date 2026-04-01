@@ -40,14 +40,14 @@ export const Hero = () => {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         >
           <div className="relative mb-6 lg:hidden">
-            <div className="w-28 h-28 rounded-full p-0.5 bg-linear-to-br from-primary to-secondary shadow-[0_0_20px_rgba(106,242,222,0.35)]">
+            <div className={`w-28 h-28 rounded-full p-0.5 bg-linear-to-br ${isDarkTheme ? "from-primary to-secondary" : "from-[#006D62] to-[#006D62]"} shadow-[0_0_20px_rgba(106,242,222,0.35)]`}>
               <img
                 src={fotoPerfil}
                 alt="Vitor Madeira Profile Photo"
                 className="w-full h-full rounded-full object-cover object-[50%_30%] bg-[#020617]"
               />
             </div>
-            <span className="absolute right-1.5 bottom-2 w-4 h-4 rounded-full bg-primary border-2 border-black" />
+            <span className={`absolute right-1.5 bottom-2 w-4 h-4 rounded-full ${isDarkTheme ? "bg-primary" : "bg-[#006D62]"} border border-black`} />
           </div>
 
           <motion.h1
