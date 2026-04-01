@@ -3,19 +3,34 @@ import fotoPerfil from "../../assets/images/foto-perfil.png";
 import setupFuturista from "../../assets/images/setup-futurista.png";
 import { TypewriterRole } from "../TypewriterRole";
 import { motion } from "motion/react";
+import { useContext } from "react";
+import { ThemeContext } from "../../contexts/ThemeContext";
 
 export const Hero = () => {
+  const { theme } = useContext(ThemeContext);
+  const isDarkTheme = theme === "dark";
+
   return (
     <section
-      className="relative min-h-screen flex items-center justify-center pt-20 px-6 overflow-hidden bg-black"
+      className={`relative min-h-screen flex items-center justify-center pt-20 px-6 overflow-hidden ${
+        isDarkTheme ? "bg-black" : "bg-[#F8FAFC]/95"
+      }`}
       id="hero"
     >
       <div className="absolute inset-0 z-0">
         <NetworkBackground />
       </div>
 
-      <div className="absolute top-1/4 -left-20 w-96 h-96 bg-primary/5 rounded-full blur-[120px]"></div>
-      <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-tertiary/5 rounded-full blur-[120px]"></div>
+      <div
+        className={`absolute top-1/4 -left-20 w-96 h-96 rounded-full blur-[120px] ${
+          isDarkTheme ? "bg-primary/5" : "bg-[#6af2de]/25"
+        }`}
+      ></div>
+      <div
+        className={`absolute bottom-1/4 -right-20 w-96 h-96 rounded-full blur-[120px] ${
+          isDarkTheme ? "bg-tertiary/5" : "bg-[#50d6c1]/20"
+        }`}
+      ></div>
 
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-[max-content_max-content] lg:gap-24 items-center lg:justify-center">
         <motion.div
@@ -39,10 +54,14 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 32 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-            className="text-on-surface font-headline font-black text-5xl md:text-6xl lg:text-8xl tracking-tighter leading-tight mb-4 whitespace-normal lg:whitespace-nowrap"
+            className={`font-headline font-black text-5xl md:text-6xl lg:text-8xl tracking-tighter leading-tight mb-4 whitespace-normal lg:whitespace-nowrap ${
+              isDarkTheme ? "text-on-surface" : "text-[#0f172a]"
+            }`}
           >
             Vitor{" "}
-            <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-secondary">
+            <span className={`${
+              isDarkTheme ? "text-primary" : "text-[#006D62]"
+            }`}>
               Madeira
             </span>
           </motion.h1>
@@ -55,7 +74,9 @@ export const Hero = () => {
                 delay: 0.2,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="text-primary text-md sm:text-xl md:text-2xl font-headline font-bold min-h-[2.2rem] whitespace-nowrap"
+              className={`text-md sm:text-xl md:text-2xl font-headline font-bold min-h-[2.2rem] whitespace-nowrap ${
+                isDarkTheme ? "text-primary" : "text-[#006D62]"
+              }`}
             >
               {" "}
               <TypewriterRole />{" "}
@@ -69,10 +90,17 @@ export const Hero = () => {
                 delay: 0.3,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="text-on-surface-variant text-xl md:text-2xl font-body max-w-lg leading-relaxed lg:max-w-lg"
+              className={`text-xl md:text-2xl font-body max-w-lg leading-relaxed lg:max-w-lg ${
+                isDarkTheme ? "text-on-surface-variant" : "text-slate-600"
+              }`}
             >
               Construo interfaces modernas e performáticas com{" "}
-              <span className="text-on-surface">React</span>.
+              <span
+                className={isDarkTheme ? "text-on-surface" : "text-slate-800"}
+              >
+                React
+              </span>
+              .
             </motion.p>
           </div>
 
@@ -83,7 +111,11 @@ export const Hero = () => {
             className="flex flex-col lg:flex-row gap-4 w-full max-w-xs lg:max-w-none"
           >
             <a
-              className="px-8 py-4 bg-linear-to-br from-primary to-primary-container text-on-primary-container font-headline font-bold rounded-full hover:shadow-[0_0_30px_rgba(106,242,222,0.5)] transition-all duration-300 hover:scale-105 active:scale-95 flex items-center justify-center gap-2 w-full lg:w-auto"
+              className={`px-8 py-4 font-headline font-bold rounded-full transition-all duration-300 hover:scale-105 active:scale-95 flex items-center justify-center gap-2 w-full lg:w-auto ${
+                isDarkTheme
+                  ? "bg-linear-to-br from-primary to-primary-container text-on-primary-container hover:shadow-[0_0_30px_rgba(106,242,222,0.5)]"
+                  : "bg-[#006D62] text-white hover:bg-[#006D62]/90 hover:shadow-[0_0_30px_rgba(0,109,98,0.5)]"
+              }`}
               href="https://github.com/MadeiraVitor"
               target="_blank"
               rel="noopener noreferrer"
@@ -97,7 +129,11 @@ export const Hero = () => {
               </span>
             </a>
             <a
-              className="px-8 py-4 border-3 border-outline-variant/50 text-primary font-headline font-bold rounded-full hover:bg-primary/5 transition-all duration-300 hover:scale-105 active:scale-95 flex items-center justify-center gap-2 w-full lg:w-auto"
+              className={`px-8 py-4 border-2 font-headline font-bold rounded-full transition-all duration-300 hover:scale-105 active:scale-95 flex items-center justify-center gap-2 w-full lg:w-auto ${
+                isDarkTheme
+                  ? "border-outline-variant/50 text-primary hover:bg-primary/5"
+                  : "border-slate-300 text-[#006D62] hover:bg-white/70"
+              }`}
               href="https://www.linkedin.com/in/vitor-madeira/"
               target="_blank"
               rel="noopener noreferrer"
@@ -120,24 +156,27 @@ export const Hero = () => {
           transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
         >
           <div
-            className="
+            className={`
               relative
               w-100 h-100
               rounded-full
               p-0.75
-              bg-linear-to-br from-cyan-400/30 to-blue-500/30
-              shadow-[0_0_40px_rgba(0,255,200,0.3)]
+              ${
+                isDarkTheme
+                  ? "bg-linear-to-br from-cyan-400/30 to-blue-500/30 shadow-[0_0_40px_rgba(0,255,200,0.3)]"
+                  : "bg-linear-to-br from-[#6af2de]/35 to-[#006D62]/40 shadow-[0_0_45px_rgba(106,242,222,0.35)]"
+              }
               animate-pulse-slow
-            "
+            `}
           >
             <div
-              className="
+              className={`
                 w-full h-full
                 rounded-full
                 overflow-hidden
-                bg-[#020617]
+                ${isDarkTheme ? "bg-[#020617]" : "bg-[#f8fafc]"}
                 flex items-center justify-center
-              "
+              `}
             >
               <img
                 src={setupFuturista}
