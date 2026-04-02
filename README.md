@@ -1,73 +1,114 @@
-# React + TypeScript + Vite
+<h1 align="center">
+  Portfólio Pessoal – Vitor Madeira
+</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação de portfólio desenvolvida com foco em apresentação profissional, navegação moderna e experiência visual, incluindo seções de introdução, sobre, stacks, projetos e contato com animações suaves.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📄 Descrição
 
-## React Compiler
+Este projeto consiste em um portfólio pessoal desenvolvido para praticar e consolidar conceitos fundamentais de front-end moderno, como:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Componentização com React + TypeScript
+- Gerenciamento de estado global com Context API
+- Animações com Motion
+- Efeitos visuais com tsParticles
+- Persistência de tema no Local Storage
 
-## Expanding the ESLint configuration
+A aplicação permite que recrutadores e visitantes conheçam meu perfil, tecnologias dominadas e projetos desenvolvidos, por meio de uma interface responsiva e com identidade visual consistente.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🔗 Preview
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+<div align="center">
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Mobile 📱
+
+  <img src="./src/assets/images/portfolio-mobile.gif" alt="mobile" height="425">
+
+  <br>
+  
+  ### Desktop 💻
+  <img src="./src/assets/images/portfolio-desktop.gif" alt="desktop" height="425">
+</div>
+
+<br>
+
+🚀 Deploy do projeto:
+<a href="#" target="_blank">Deploy</a>
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+- React
+- TypeScript
+- TailwindCSS
+- Motion
+- Context API
+- tsParticles
+- React Icons
+- Vite
+
+---
+
+## ⚙️ Funcionalidades
+
+- Header fixo com navegação por âncoras
+- Alternância de tema claro/escuro
+- Persistência do tema no Local Storage
+- Hero com destaque profissional e efeito de digitação
+- Seção Sobre com apresentação pessoal
+- Seção de Stacks dividida por categorias
+- Seção de Projetos com cards e links externos
+- Seção de Contato com redes e canais diretos
+- Fundo animado com partículas na seção inicial
+- Menu mobile com navegação responsiva
+- Animações de entrada com efeito stagger no scroll
+- Layout responsivo para desktop e mobile
+
+---
+
+## ▶️ Como rodar o projeto localmente
+
+Siga os passos abaixo para rodar o projeto em sua máquina:
+
+```bash
+# Clone o repositório
+git clone https://github.com/MadeiraVitor/portfolio-vm.git
+
+# Acesse a pasta do projeto
+cd portfolio-vm
+
+# Instale as dependências
+npm install
+
+# Inicie o servidor de desenvolvimento
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+O projeto estará disponível em:
+http://localhost:5173
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📚 Aprendizados
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Durante o desenvolvimento deste projeto, foi possível praticar:
+
+- Estruturação de uma aplicação React por seções reutilizáveis
+- Gerenciamento de estado global com Context API
+- Persistência de preferência de tema com Local Storage
+- Criação de componentes reutilizáveis e escaláveis
+- Uso de animações com Motion para melhorar a experiência
+- Integração de efeitos visuais com tsParticles
+- Organização de layout responsivo para desktop e mobile
+- Estilização com TailwindCSS
+
+## 👤 Autor
+
+<div align="center">
+    <p>Desenvolvido por <strong>Vitor Madeira</strong></p>
+    <a href="https://www.linkedin.com/in/vitor-madeira/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+    <a href = "mailto:vitorsoutom@hotmail.com"><img src="https://img.shields.io/badge/-Email-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+</div>
