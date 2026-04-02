@@ -37,7 +37,7 @@ A aplicação permite que recrutadores e visitantes conheçam meu perfil, tecnol
 <br>
 
 🚀 Deploy do projeto:
-<a href="#" target="_blank">Deploy</a>
+<a href="https://portfolio-vm-self.vercel.app/" target="_blank">Deploy</a>
 
 ---
 
