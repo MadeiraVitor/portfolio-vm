@@ -94,13 +94,7 @@ export const Hero = () => {
                 isDarkTheme ? "text-on-surface-variant" : "text-slate-600"
               }`}
             >
-              Construo interfaces modernas e performáticas com{" "}
-              <span
-                className={isDarkTheme ? "text-on-surface" : "text-slate-800"}
-              >
-                React
-              </span>
-              .
+              Construo aplicações completas e performáticas, do front ao back.
             </motion.p>
           </div>
 

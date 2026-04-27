@@ -70,9 +70,8 @@ export const About = () => {
                 isDarkTheme ? "text-on-surface-variant" : "text-slate-500"
               }`}
             >
-              Desenvolvedor Front-End com foco em React e TypeScript, atuando na
-              construção de interfaces modernas, performáticas e bem
-              estruturadas. Utilizo TypeScript para aumentar a previsibilidade
+              Desenvolvedor Full-Stack com foco em React e Node.js, atuando na
+              construção de aplicações completas e performáticas, do front ao back. Utilizo TypeScript para aumentar a previsibilidade
               do código e reduzir erros em tempo de desenvolvimento. Tenho como
               prioridade escrever código limpo, organizado e escalável, seguindo
               boas práticas e versionamento com Git. Busco evoluir

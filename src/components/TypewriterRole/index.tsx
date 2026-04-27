@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 
 const phrases = [
-  "Desenvolvedor Front-End",
-  "Especialista em React e TypeScript",
+  "Desenvolvedor Full-Stack",
+  "Especialista em React e Node",
   "Transformando ideias em código",
 ];
 
