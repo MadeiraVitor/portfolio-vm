@@ -11,6 +11,8 @@ import {
   SiTailwindcss,
   SiTypescript,
   SiVite,
+  SiNextdotjs,
+  SiFastify,
 } from "react-icons/si";
 import { ThemeContext } from "../../contexts/ThemeContext";
 
@@ -107,6 +109,10 @@ export const Skills = () => {
             <h4 className={cardTitleClassName}>Front-end</h4>
             <div className="grid grid-cols-2 gap-4">
               <div className={techItemClassName}>
+                <SiNextdotjs className="text-3xl mb-1 text-[#000000] bg-white rounded-full" />
+                <span className={techLabelClassName}>Next.js</span>
+              </div>
+              <div className={techItemClassName}>
                 <FaReact className="text-3xl mb-1 text-[#61DAFB]" />
                 <span className={techLabelClassName}>React</span>
               </div>
@@ -136,6 +142,10 @@ export const Skills = () => {
               <div className={techItemClassName}>
                 <SiPostgresql className="text-3xl mb-1 text-[#4169E1]" />
                 <span className={techLabelClassName}>PostgreSQL</span>
+              </div>
+              <div className={techItemClassName}>
+                <SiFastify className="text-3xl mb-1 text-slate-500" />
+                <span className={techLabelClassName}>Fastify</span>
               </div>
               <div className={techItemClassName}>
                 <SiExpress className="text-3xl mb-1 text-slate-500" />
