@@ -21,7 +21,7 @@ export const Header = () => {
       }`}
     >
       <div className="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
-        <a className="flex items-center gap-2 group cursor-pointer">
+        <a className="flex items-center gap-2 group cursor-pointer" href="#hero">
           <span
             className={`w-10 h-10 border-2 rounded-lg flex items-center justify-center transition-all duration-300 ${
               isDarkTheme
