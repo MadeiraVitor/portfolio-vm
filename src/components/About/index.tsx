@@ -85,7 +85,7 @@ export const About = () => {
                 ? "bg-primary text-on-primary-container hover:shadow-[0_0_30px_rgba(106,242,222,0.5)]"
                 : "bg-[#006D62] text-white hover:bg-[#006D62]/90 hover:shadow-[0_0_30px_rgba(0,109,98,0.5)]"
             }`}
-            href="/curriculo-vitor-madeira.pdf"
+            href="/Vitor_Madeira_Curriculo.pdf"
             download
           >
             <span className="material-symbols-outlined" data-icon="download">
