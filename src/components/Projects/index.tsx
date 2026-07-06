@@ -1,7 +1,7 @@
+import imageFinManager from "../../assets/images/finmanager.png";
 import imageSyntaxwear from "../../assets/images/syntaxwear.png";
+import imageTokyo from "../../assets/images/tokyo.png";
 import imageGhibli from "../../assets/images/ghibli.png";
-import imagePokedex from "../../assets/images/pokedex.png";
-import imageTodo from "../../assets/images/todo.png";
 import { motion } from "motion/react";
 import { useContext } from "react";
 import { ThemeContext } from "../../contexts/ThemeContext";
@@ -101,7 +101,62 @@ export const Projects = () => {
         >
           {/* <!-- Project Card 1 --> */}
           <motion.div
-            className={`${cardClassName} w-[92%] md:w-full ml-2.5 md:ml-0`}
+            className={`${cardClassName} w-[89%] md:w-full ml-2.5 md:ml-0`}
+            variants={projectCardVariants}
+            transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
+          >
+            <div className="aspect-video overflow-hidden">
+              <img
+                alt="FinManager Project"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                src={imageFinManager}
+              />
+            </div>
+            <div className="p-8">
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className={techTagClassName}>Next.js</span>
+                <span className={techTagClassName}>TypeScript</span>
+                <span className={techTagClassName}>Tailwind</span>
+              </div>
+              <h4 className={projectTitleClassName}>FinManager</h4>
+              <p className={projectDescriptionClassName}>
+                Aplicação web para organizar finanças pessoais com foco em visão mensal, cadastro de transações, análise de saldo, distribuição por categoria e suporte a decisões com insights gerados por IA.
+              </p>
+              <div className="flex gap-4">
+                <a
+                  className={liveLinkClassName}
+                  href="https://finmanager-app-vm.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ver Projeto
+                  <span
+                    className="material-symbols-outlined text-sm"
+                    data-icon="open_in_new"
+                  >
+                    open_in_new
+                  </span>
+                </a>
+                <a
+                  className={githubLinkClassName}
+                  href="https://github.com/MadeiraVitor/fin-manager-app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                  <span
+                    className="material-symbols-outlined text-sm"
+                    data-icon="code"
+                  >
+                    code
+                  </span>
+                </a>
+              </div>
+            </div>
+          </motion.div>
+          {/* <!-- Project Card 2 --> */}
+          <motion.div
+            className={`${cardClassName} w-[88%] md:w-full md:ml-0`}
             variants={projectCardVariants}
             transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
           >
@@ -127,7 +182,7 @@ export const Projects = () => {
               <div className="flex gap-4">
                 <a
                   className={liveLinkClassName}
-                  href="https://syntax-wear-app-sage.vercel.app/"
+                  href="https://syntax-wear-app-vitor-madeiras-projects.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -156,9 +211,64 @@ export const Projects = () => {
               </div>
             </div>
           </motion.div>
-          {/* <!-- Project Card 2 --> */}
+          {/* <!-- Project Card 3 --> */}
           <motion.div
-            className={`${cardClassName} w-[90%] md:w-full`}
+            className={`${cardClassName} w-[88%] md:w-full`}
+            variants={projectCardVariants}
+            transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
+          >
+            <div className="aspect-video overflow-hidden">
+              <img
+                alt="Tokyo Project"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                src={imageTokyo}
+              />
+            </div>
+            <div className="p-8">
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className={techTagClassName}>React</span>
+                <span className={techTagClassName}>TypeScript</span>
+                <span className={techTagClassName}>Tailwind</span>
+              </div>
+              <h4 className={projectTitleClassName}>Tokyo Culinária</h4>
+              <p className={projectDescriptionClassName}>
+                Website de um restaurante premium de culinária japonesa desenvolvido com foco em design elegante, navegação intuitiva e apresentação imersiva dos destaques do cardápio, incluindo seção de experiência, galeria, depoimentos e integração com WhatsApp para reservas.
+              </p>
+              <div className="flex gap-4">
+                <a
+                  className={liveLinkClassName}
+                  href="https://tokyo-culinaria.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ver Projeto
+                  <span
+                    className="material-symbols-outlined text-sm"
+                    data-icon="open_in_new"
+                  >
+                    open_in_new
+                  </span>
+                </a>
+                <a
+                  className={githubLinkClassName}
+                  href="https://github.com/MadeiraVitor/tokyo-culinaria"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                  <span
+                    className="material-symbols-outlined text-sm"
+                    data-icon="code"
+                  >
+                    code
+                  </span>
+                </a>
+              </div>
+            </div>
+          </motion.div>
+          {/* <!-- Project Card 4 --> */}
+          <motion.div
+            className={`${cardClassName} w-[89%] mr-2.5 md:w-full`}
             variants={projectCardVariants}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           >
@@ -199,121 +309,6 @@ export const Projects = () => {
                 <a
                   className={githubLinkClassName}
                   href="https://github.com/MadeiraVitor/ghibli-films"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  GitHub
-                  <span
-                    className="material-symbols-outlined text-sm"
-                    data-icon="code"
-                  >
-                    code
-                  </span>
-                </a>
-              </div>
-            </div>
-          </motion.div>
-          {/* <!-- Project Card 3 --> */}
-          <motion.div
-            className={`${cardClassName} w-[90%] md:w-full`}
-            variants={projectCardVariants}
-            transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-          >
-            <div className="aspect-video overflow-hidden">
-              <img
-                alt="Pokedex Project"
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                src={imagePokedex}
-              />
-            </div>
-            <div className="p-8">
-              <div className="flex flex-wrap gap-2 mb-4">
-                <span className={techTagClassName}>React</span>
-                <span className={techTagClassName}>TypeScript</span>
-                <span className={techTagClassName}>Fetch API</span>
-              </div>
-              <h4 className={projectTitleClassName}>Pokédex</h4>
-              <p className={projectDescriptionClassName}>
-                Aplicação desenvolvida como Single Page Application (SPA) para
-                listar Pokémons utilizando a PokeAPI, com sistema de tema
-                claro/escuro e página de detalhes dinâmica.
-              </p>
-              <div className="flex gap-4">
-                <a
-                  className={liveLinkClassName}
-                  href="https://pokedex-project-hazel.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Ver Projeto
-                  <span
-                    className="material-symbols-outlined text-sm"
-                    data-icon="open_in_new"
-                  >
-                    open_in_new
-                  </span>
-                </a>
-                <a
-                  className={githubLinkClassName}
-                  href="https://github.com/MadeiraVitor/pokedex-project"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  GitHub
-                  <span
-                    className="material-symbols-outlined text-sm"
-                    data-icon="code"
-                  >
-                    code
-                  </span>
-                </a>
-              </div>
-            </div>
-          </motion.div>
-          {/* <!-- Project Card 4 --> */}
-          <motion.div
-            className={`${cardClassName} w-[92%] md:w-full mr-2.5 md:mr-0`}
-            variants={projectCardVariants}
-            transition={{ duration: 0.8, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-          >
-            <div className="aspect-video overflow-hidden">
-              <img
-                alt="To-Do App Project"
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                src={imageTodo}
-              />
-            </div>
-            <div className="p-8">
-              <div className="flex flex-wrap gap-2 mb-4">
-                <span className={techTagClassName}>React</span>
-                <span className={techTagClassName}>TypeScript</span>
-                <span className={techTagClassName}>Context API</span>
-              </div>
-              <h4 className={projectTitleClassName}>To-Do App</h4>
-              <p className={projectDescriptionClassName}>
-                Aplicação de gerenciamento de tarefas desenvolvida com foco em
-                interatividade, manipulação de estado e experiência do usuário,
-                incluindo sistema de filtros e alternância entre tema claro e
-                escuro.
-              </p>
-              <div className="flex gap-4">
-                <a
-                  className={liveLinkClassName}
-                  href="https://todolist-three-dusky.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Ver Projeto
-                  <span
-                    className="material-symbols-outlined text-sm"
-                    data-icon="open_in_new"
-                  >
-                    open_in_new
-                  </span>
-                </a>
-                <a
-                  className={githubLinkClassName}
-                  href="https://github.com/MadeiraVitor/todolist"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
